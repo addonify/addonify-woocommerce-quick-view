@@ -528,7 +528,7 @@ class Addonify_Quick_View_Public {
 	private function get_templates( $template_name, $require_once = true, $args=array() ){
 
 		// first look for template in themes/addonify/templates
-		$theme_path = get_template_directory() . '/addonify/' . $template_name .'.php';
+		$theme_path = get_stylesheet_directory() . '/addonify/' . $template_name .'.php';
 		$plugin_path = dirname( __FILE__ ) .'/templates/' . $template_name .'.php';
 
 		if( file_exists( $theme_path ) ){
